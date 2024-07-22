@@ -37,7 +37,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 else {
                     fatalError("unexpected result type from VNCoreMLRequest")
             }
-            
+            print(topResult.identifier)
             if topResult.identifier.contains("hotdog") {
                 DispatchQueue.main.async {
                     self.navigationItem.title = "Hotdog!"
@@ -47,7 +47,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             }
             else {
                 DispatchQueue.main.async {
-                    self.navigationItem.title = "Not Hotdog!"
+                    if let commaIndex = topResult.identifier.firstIndex(of: ",") {
+                        let substring = topResult.identifier[..<commaIndex]
+                        self.navigationItem.title = String(substring)
+                    } else {
+                        // Handle the case where there is no comma in the identifier
+                        self.navigationItem.title = topResult.identifier
+                    }
+ 
+
                     self.navigationController?.navigationBar.barTintColor = UIColor.red
                     self.navigationController?.navigationBar.isTranslucent = false
                 }
@@ -80,7 +88,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBAction func cameraTapped(_ sender: Any) {
         
-        imagePicker.sourceType = .camera
+        imagePicker.sourceType = .photoLibrary
         imagePicker.allowsEditing = false
         present(imagePicker, animated: true, completion: nil)
     }
