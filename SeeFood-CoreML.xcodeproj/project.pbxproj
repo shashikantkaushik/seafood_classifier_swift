@@ -293,7 +293,7 @@
 				DEVELOPMENT_TEAM = 3ECFYJZ64T;
 				INFOPLIST_FILE = "SeeFood-CoreML/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.londonappbrewery.SeeFood-CoreML";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shashi-CoreML";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,7 +307,7 @@
 				DEVELOPMENT_TEAM = 3ECFYJZ64T;
 				INFOPLIST_FILE = "SeeFood-CoreML/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.londonappbrewery.SeeFood-CoreML";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shashi-CoreML";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

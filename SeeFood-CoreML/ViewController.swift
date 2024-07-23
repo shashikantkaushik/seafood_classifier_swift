@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  SeeFood-CoreML
 //
-//  Created by Angela Yu on 27/06/2017.
-//  Copyright © 2017 Angela Yu. All rights reserved.
+//  Created by Shashi Kant on 22/07/2024.
+//  Copyright © 2024 Shashi Kant. All rights reserved.
 //
 
 import UIKit
